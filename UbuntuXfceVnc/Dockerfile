@@ -1,0 +1,6 @@
+FROM ubuntu
+
+RUN apt update
+RUN apt install -y wget net-tools bzip2
+RUN wget -qO- https://dl.bintray.com/tigervnc/stable/tigervnc-1.9.0.x86_64.tar.gz | tar xz --strip 1 -C /
+RUN apt install -y supervisor xfce4 xfce4-terminal xterm

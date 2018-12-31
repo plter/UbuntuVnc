@@ -1,0 +1,1 @@
+docker build -t xtiqin/ubuntu-xfce-vnc .
